@@ -158,3 +158,66 @@
 		$(this).hasClass('on') ? slideUp() : slideDown(this);
 	});
 </script>
+
+<style>
+	
+* {margin: 0;padding: 0;}
+	div{padding: 10px;}
+	.accordian-item {background-color: #333;margin-bottom: 5px; color: #FFF;}
+	.accordian-content {background-color: #DDD;margin-bottom: 5px;display: none;}
+	.accordian-inner-item {background-color: #888;margin-bottom: 5px; color: #FFF;}
+	.accordian-inner-content {background-color: #DDD;margin-bottom: 5px;display: none;}
+	@font-face{
+		font-family: 'yts';
+		src: url(Yt1b2_S8ns/YouTube-Sans-Light.otf);
+	}
+	*{font-family: 'yts';}
+	#content-mid{width: 100%; height: 500px; margin: 0 auto; background-color: #f6f6f6;}
+	#tab-layer-wrap{width: 1105px; height: 100%; margin: 0 auto;}
+	#tab-layer-wrap, #tab-layer-wrap * {box-sizing: border-box;}
+	#tab-layer-wrap .tab-menu>.item{padding:10px 0;cursor: pointer;}
+	.tab-cont-wrap{height: 400px; margin-top: 10px;}
+	.tab-menu-content{height: 100%;}
+
+	.tab-menu {margin: 0;padding: 0;overflow: hidden;display: flex;flex-direction: row;width: 100%; justify-content: space-between;}
+	.tab-menu .item{width: 17%; text-align: center; font-size: 17px; font-weight: bold;}
+	.tab-menu .item a {display: inline-block;color: #000;text-align: center;text-decoration: none;padding: 14px 16px;font-size: 17px;transition:0.3s;}
+	.tab-menu .item:hover{border-bottom: 7px solid #425094; color: #425094;}
+	.tab-menu .current{border-bottom: 7px solid #425094; color: #425094;}
+	.tab-menu .un-current{border-bottom: 7px solid #A5A5A5; color: #A5A5A5;}
+
+	.tab-menu-item {display: none; width: 100%;height: 100%;}
+	.tab-menu-item.current {display: block;}
+
+	.tab-menu-item:first-child>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
+	.tab-menu-item:first-child>div>div:first-child{width: 60%; height: 100%;}
+	.tab-menu-item:first-child>div>div:first-child>div{width: 100%; height: 100%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 400px; font-size: 40px; font-weight: 600;}
+	.tab-menu-item:first-child>div>div:last-child{width: 40%; height: 100%;padding: 0 10px;}
+	.tab-menu-item:first-child>div>div:last-child>p{margin: 0;text-align: justify;font-size: 15px; line-height: 20px;}
+
+	.tab-menu-item:nth-child(2)>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
+	.tab-menu-item:nth-child(2)>div>div:first-child{width: 50%; height: 100%;display: flex; flex-direction: column; justify-content: space-between;}
+	.tab-menu-item:nth-child(2)>div>div:first-child>div{width: 100%; height: 49%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 196px; font-size: 30px; font-weight: 600;}
+	.tab-menu-item:nth-child(2)>div>div:last-child{width: 50%; height: 100%;padding: 0 10px;}
+	.tab-menu-item:nth-child(2)>div>div:last-child>p{margin: 0;text-align: justify;font-size: 15px; line-height: 20px;}
+
+	.tab-menu-item:nth-child(3)>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
+	.tab-menu-item:nth-child(3)>div>div{width: 33%; height: 100%;display: flex; flex-direction: column; justify-content: space-between;}
+	.tab-menu-item:nth-child(3)>div>div>div{text-align: center; font-size: 30px; font-weight: 600;}
+	.tab-menu-item:nth-child(3)>div>div:first-child>div{width: 100%; height: 32.1%; background-color: #252526; color: #23AAF2; line-height: 128.39px;}
+	.tab-menu-item:nth-child(3)>div>div:nth-child(2)>div{width: 100%; height: 49%; background-color: #272627; color: #04B0F0; line-height: 196px;}
+	.tab-menu-item:nth-child(3)>div>div:last-child>div{width: 100%; height: 100%; background-color: #1E1E1E; color: #007ACC; line-height: 400px;}
+	.like-img{width: 100%; height: 100%; text-align: center; font-size: 35px; font-weight: bold; line-height: 220px; color: #23AAF2; background-color: #252526;}
+	.MyClass{width: 1104px; height: 220px; overflow: hidden;}
+
+	/* RESET */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a{text-decoration: none; color: inherit;}
+</style>
