@@ -1,1 +1,216 @@
-asdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<title>MyLibrary</title>
+</head>
+<style>
+	@font-face{
+		font-family: 'yts';
+		src: url(Yt1b2_S8ns/YouTube-Sans-Light.otf);
+	}
+	*{font-family: 'yts';}
+	#content-mid{width: 100%; height: 500px; margin: 0 auto; background-color: #f6f6f6;}
+	#tab-layer-wrap{width: 1105px; height: 100%; margin: 0 auto;}
+	#tab-layer-wrap, #tab-layer-wrap * {box-sizing: border-box;}
+	#tab-layer-wrap .tab-menu>.item{padding:10px 0;cursor: pointer;}
+	.tab-cont-wrap{height: 400px; margin-top: 10px;}
+	.tab-menu-content{height: 100%;}
+
+	.tab-menu {margin: 0;padding: 0;overflow: hidden;display: flex;flex-direction: row;width: 100%; justify-content: space-between;}
+	.tab-menu .item{width: 17%; text-align: center; font-size: 17px; font-weight: bold;}
+	.tab-menu .item a {display: inline-block;color: #000;text-align: center;text-decoration: none;padding: 14px 16px;font-size: 17px;transition:0.3s;}
+	.tab-menu .item:hover{border-bottom: 7px solid #425094; color: #425094;}
+	.tab-menu .current{border-bottom: 7px solid #425094; color: #425094;}
+	.tab-menu .un-current{border-bottom: 7px solid #A5A5A5; color: #A5A5A5;}
+
+	.tab-menu-item {display: none; width: 100%;height: 100%;}
+	.tab-menu-item.current {display: block;}
+
+	.tab-menu-item:first-child>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
+	.tab-menu-item:first-child>div>div:first-child{width: 60%; height: 100%;}
+	.tab-menu-item:first-child>div>div:first-child>div{width: 100%; height: 100%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 400px; font-size: 40px; font-weight: 600;}
+	.tab-menu-item:first-child>div>div:last-child{width: 40%; height: 100%;padding: 0 10px;}
+	.tab-menu-item:first-child>div>div:last-child>p{margin: 0;text-align: justify;font-size: 15px; line-height: 20px;}
+
+	.tab-menu-item:nth-child(2)>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
+	.tab-menu-item:nth-child(2)>div>div:first-child{width: 50%; height: 100%;display: flex; flex-direction: column; justify-content: space-between;}
+	.tab-menu-item:nth-child(2)>div>div:first-child>div{width: 100%; height: 49%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 196px; font-size: 30px; font-weight: 600;}
+	.tab-menu-item:nth-child(2)>div>div:last-child{width: 50%; height: 100%;padding: 0 10px;}
+	.tab-menu-item:nth-child(2)>div>div:last-child>p{margin: 0;text-align: justify;font-size: 15px; line-height: 20px;}
+
+	.tab-menu-item:nth-child(3)>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
+	.tab-menu-item:nth-child(3)>div>div{width: 33%; height: 100%;display: flex; flex-direction: column; justify-content: space-between;}
+	.tab-menu-item:nth-child(3)>div>div>div{text-align: center; font-size: 30px; font-weight: 600;}
+	.tab-menu-item:nth-child(3)>div>div:first-child>div{width: 100%; height: 32.1%; background-color: #252526; color: #23AAF2; line-height: 128.39px;}
+	.tab-menu-item:nth-child(3)>div>div:nth-child(2)>div{width: 100%; height: 49%; background-color: #272627; color: #04B0F0; line-height: 196px;}
+	.tab-menu-item:nth-child(3)>div>div:last-child>div{width: 100%; height: 100%; background-color: #1E1E1E; color: #007ACC; line-height: 400px;}
+
+	/* .tab-menu-item:nth-child(n+3)>div{width: 100%; height: 100%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 400px; font-size: 40px; font-weight: 600;} */
+</style>
+<body>
+	<section id="content-mid">
+		<div id="tab-layer-wrap">
+			<div class="tab-menu-wrap">
+				<div class="tab-menu">
+					<div class="item current">index 1번</div>
+					<div class="item un-current">index 2번</div>
+					<div class="item un-current">index 3번</div>
+					<div class="item un-current">index 4번</div>
+					<div class="item un-current">index 5번</div>
+				</div>
+			</div>
+			<div class="tab-cont-wrap">
+				<div class="tab-menu-content">
+					<div class="tab-menu-item current">
+						<div>
+							<div><div>Like IMG</div></div>
+							<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
+						</div>
+					</div>
+					<div class="tab-menu-item">
+						<div>
+							<div>
+								<div>Like IMG</div>
+								<div>Like IMG</div>
+							</div>
+							<div><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
+						</div>
+					</div>
+					<div class="tab-menu-item">
+						<div>
+							<div>
+								<div>A</div>
+								<div>B</div>
+								<div>C</div>
+							</div>
+							<div>
+								<div>D</div>
+								<div>E</div>
+							</div>
+							<div>
+								<div>F</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-menu-item">
+						<style> 
+	
+							.like-img{width: 100%; height: 100%; text-align: center; font-size: 35px; font-weight: bold; line-height: 220px; color: #23AAF2; background-color: #252526;}
+						
+							.MyClass{width: 1104px; height: 220px; overflow: hidden;}
+						</style>
+						
+							<div class="MyClass">
+								<div class="swiper-container MySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><div class="like-img">TEXT1</div></div>
+										<div class="swiper-slide"><div class="like-img">TEXT2</div></div>
+										<div class="swiper-slide"><div class="like-img">TEXT3</div></div>
+										<div class="swiper-slide"><div class="like-img">TEXT4</div></div>
+									</div>
+									<div class="swiper-pagination"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+							</div>
+						
+						
+							<script>
+								var Swiper = new Swiper('.MySwiper', {
+									slidesPerView: 1,
+									spaceBetween:10,
+									observer: true,
+									observeParents: true,
+									pagination: {
+										el:'.swiper-pagination',clickable:true
+									}
+								});
+							</script>
+						
+					</div>
+					<div class="tab-menu-item">
+						<div>
+							<div class="accordian-item">규칙 1번</div>
+							<div class="accordian-content">
+								<div class="accordian-inner-item">서브규칙 1번</div>
+								<div class="accordian-inner-content">CONTENT</div>
+								<div class="accordian-inner-item">서브규칙 2번</div>
+								<div class="accordian-inner-content">CONTENT</div>
+								<div class="accordian-inner-item">서브규칙 3번</div>
+								<div class="accordian-inner-content">CONTENT</div>
+								<div class="accordian-inner-item">서브규칙 4번</div>
+								<div class="accordian-inner-content">CONTENT</div>
+								<div class="accordian-inner-item">서브규칙 5번</div>
+								<div class="accordian-inner-content">CONTENT</div>
+								<div class="accordian-inner-item">서브규칙 6번</div>
+								<div class="accordian-inner-content">CONTENT</div>
+							</div>
+							<div class="accordian-item">규칙 2번</div>
+							<div class="accordian-content">CONTENT</div>
+							<div class="accordian-item">규칙 3번</div>
+							<div class="accordian-content">CONTENT</div>
+							<div class="accordian-item">규칙 4번</div>
+							<div class="accordian-content">CONTENT</div>
+						</div>
+						
+						<style>
+							* {margin: 0;padding: 0;}
+							div{padding: 10px;}
+							.accordian-item {background-color: #333;margin-bottom: 5px; color: #FFF;}
+							.accordian-content {background-color: #DDD;margin-bottom: 5px;display: none;}
+							.accordian-inner-item {background-color: #888;margin-bottom: 5px; color: #FFF;}
+							.accordian-inner-content {background-color: #DDD;margin-bottom: 5px;display: none;}
+						</style>
+						
+						<script>
+							$('.accordian-item').on('click', function() {
+								function slideDown(target) {
+									slideUp();
+									$(target).addClass('on').next().slideDown();
+								}
+								function slideUp() {
+									  $('.accordian-item').removeClass('on').next().slideUp();
+								}
+								$(this).hasClass('on') ? slideUp() : slideDown(this);
+							});
+						
+						
+						
+							$('.accordian-inner-item').on('click', function() {
+								function slideDown(target) {
+									slideUp();
+									$(target).addClass('on').next().slideDown();
+								}
+								function slideUp() {
+									  $('.accordian-inner-item').removeClass('on').next().slideUp();
+								}
+								$(this).hasClass('on') ? slideUp() : slideDown(this);
+							});
+						</script>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script>
+	$(function() {         
+		$(".tab-menu>.item").click(function(){
+			var indexNum = $(this).index();
+			$(this).addClass("current").removeClass("un-current").siblings().removeClass("current").addClass("un-current");
+			$(".tab-menu-content>.tab-menu-item").eq(indexNum).show().siblings().hide();
+		})
+	});
+</script>
+</html>
