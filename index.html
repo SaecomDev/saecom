@@ -1,5 +1,19 @@
+<style>
+    /* RESET */
+    
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a{text-decoration: none; color: inherit;}
+</style>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,93 +30,89 @@
 	<title>MyLibrary</title>
 </head>
 <style>
-
+    .title-notice{font-size: 1.4em; font-weight: 600; color: chocolate; padding: 15px;}
+    
 </style>
 <body>
 	<section id="content-mid">
 		<div id="tab-layer-wrap">
 			<div class="tab-menu-wrap">
 				<div class="tab-menu">
-					<div class="item current">index 1번</div>
+					<div class="item current">길드 컨텐츠 안내</div>
 					<div class="item un-current">index 2번</div>
 					<div class="item un-current">index 3번</div>
 					<div class="item un-current">index 4번</div>
-					<div class="item un-current">index 5번</div>
-				</div>
+					<div class="item un-current">길드 사진 공지</div>
+                </div>
 			</div>
 			<div class="tab-cont-wrap">
 				<div class="tab-menu-content">
 					<div class="tab-menu-item current">
+                        <div>
+                            <h1 class="title-notice">길드컨텐츠에는 세가지가 있습니다.</h1>
+                        </div>
 						<div>
-							<div><div class="like-img">Like IMG</div></div>
-							<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
-						</div>
-					</div>
-					<div class="tab-menu-item">
-						<div>
-							<div>
-								<div class="like-img">Like IMG</div>
-								<div class="like-img">Like IMG</div>
-							</div>
-							<div><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
-						</div>
-					</div>
-					<div class="tab-menu-item">
-						<div>
-							<div>
-								<div class="like-img">Like IMG</div>
-								<div class="like-img">Like IMG</div>
-								<div class="like-img">Like IMG</div>
-							</div>
-							<div>
-								<div class="like-img">Like IMG</div>
-								<div class="like-img">Like IMG</div>
-							</div>
-							<div>
-								<div class="like-img">Like IMG</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-menu-item">
-						<div class="MyClass">
-							<div class="swiper-container MySwiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><div class="like-img">Like IMG</div></div>
-									<div class="swiper-slide"><div class="like-img">Like IMG</div></div>
-									<div class="swiper-slide"><div class="like-img">Like IMG</div></div>
-									<div class="swiper-slide"><div class="like-img">Like IMG</div></div>
-								</div>
-								<div class="swiper-pagination"></div>
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-menu-item">
-						<div>
-							<div class="accordian-item">규칙 1번</div>
+							<div class="accordian-item">기여도 보스(기보)</div>
 							<div class="accordian-content">
-								<div class="accordian-inner-item">서브규칙 1번</div>
-								<div class="accordian-inner-content">CONTENT</div>
-								<div class="accordian-inner-item">서브규칙 2번</div>
-								<div class="accordian-inner-content">CONTENT</div>
-								<div class="accordian-inner-item">서브규칙 3번</div>
-								<div class="accordian-inner-content">CONTENT</div>
-								<div class="accordian-inner-item">서브규칙 4번</div>
-								<div class="accordian-inner-content">CONTENT</div>
-								<div class="accordian-inner-item">서브규칙 5번</div>
-								<div class="accordian-inner-content">CONTENT</div>
-								<div class="accordian-inner-item">서브규칙 6번</div>
-								<div class="accordian-inner-content">CONTENT</div>
+                                <div>
+                                    <p>길드원분들과 함께 보스를 잡으면 기여도가 오릅니다!</p>
+                                    <p>보통 노말 <strong>블러디퀸 , 피에르 , 반반 , 벨룸 , 힐라</strong>를 잡습니다.</p>
+                                    <p>5000 기여도가 들어오면 성공!</p>
+                                </div>
+                                    
+								<!-- <div class="accordian-inner-item"></div>
+								<div class="accordian-inner-content"></div> -->
 							</div>
-							<div class="accordian-item">규칙 2번</div>
-							<div class="accordian-content">CONTENT</div>
-							<div class="accordian-item">규칙 3번</div>
-							<div class="accordian-content">CONTENT</div>
-							<div class="accordian-item">규칙 4번</div>
-							<div class="accordian-content">CONTENT</div>
+							<div class="accordian-item">플래그 레이스 (플래그)</div>
+							<div class="accordian-content">
+                                <p><strong><span style="color: RED;">매 시각 30분</span>에 길드 - 길드 컨텐츠 - 진행 현황</strong>에서플래그에 입장할 수 있습니다!</p>
+                                <p>맵은 총 3가지로 점프맵 컨텐츠입니다.</p>
+                                <p>얼마나 빨리 입장하느냐에 따라 지급되는 포인트가 달라지며, 해당 맵을 연습할 수도 있습니다.</p>
+                            </div>
+							<div class="accordian-item">샤레니안의 지하수로 (수로)</div>
+							<div class="accordian-content">
+                                <p><strong>플래그처럼 길드 - 길드 컨텐츠 - 진행 현황</strong>에서 지하수로에 입장할 수 있습니다!</p>
+                                <p>기존 이벤트의 펀치킹이라고 생각하시면 편합니다.</p>
+                                <p>매 단계마다 보스가 점점 강해지며 마지막엔 방어력이 300%라 방무가 꽤 필요합니다!</p>
+                                <p>
+                                    <div class="tempCls">
+                                        <div><img src="TEMP.png" alt=""></div>
+                                        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nostrum aperiam exercitationem illo quia ab reprehenderit fugit labore reiciendis sed optio nobis non, voluptatem consequuntur, ad cum at eum quasi.</p></div>
+                                    </div>
+                                    <style>
+                                        .tempCls{display: flex; flex-direction: row; justify-content: center; align-items: center;}
+                                    </style>
+                                </p>
+                            </div>
 						</div>
 					</div>
+                    <div class="tab-menu-item"></div>
+                    <div class="tab-menu-item"></div>
+                    <div class="tab-menu-item"></div>
+                    <div class="tab-menu-item">
+                        <div class="accordian-item">길드 사진 공지</div>
+                        <div class="accordian-content">
+                            <PRE>
+                            ■ 2021.07.24 길드사진 공지 ■
+
+                            약속 생길 분들이 있을까봐 미리 공지합니다!
+
+                            돌아오는 토요일 18:50에 길드
+                            사진을 촬영하려고 해요! [써드렸듯 7/24]
+
+                            촬영된 사진은 새콤달콤 길드 추억 간직 및
+                            길드 홍보용으로 사용될 예정이예요~
+
+                            작은 이벤트도 준비하고 있으니
+                            많은 참석 부탁드립니다!
+
+
+                            장소 보기 및 오시는 길 : <a href="https://blog.naver.com/jihye7303/222185518326">https://blog.naver.com/jihye7303/222185518326</a>
+
+                            <img src="KakaoTalk_20201225_215012431.jpg" alt="">
+                        </PRE>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -162,11 +172,10 @@
 <style>
 	
 * {margin: 0;padding: 0;}
-	div{padding: 10px;}
-	.accordian-item {background-color: #333;margin-bottom: 5px; color: #FFF;}
-	.accordian-content {background-color: #DDD;margin-bottom: 5px;display: none;}
-	.accordian-inner-item {background-color: #888;margin-bottom: 5px; color: #FFF;}
-	.accordian-inner-content {background-color: #DDD;margin-bottom: 5px;display: none;}
+	.accordian-item {background-color: #333;margin-bottom: 5px; color: #FFF; padding: 14px;}
+	.accordian-content {background-color: #DDD;margin-bottom: 5px;display: none; padding: 14px;}
+	.accordian-inner-item {background-color: #888;margin-bottom: 5px; color: #FFF; padding: 14px;}
+	.accordian-inner-content {background-color: #DDD;margin-bottom: 5px;display: none; padding: 14px;}
 	@font-face{
 		font-family: 'yts';
 		src: url(Yt1b2_S8ns/YouTube-Sans-Light.otf);
@@ -189,35 +198,17 @@
 	.tab-menu-item {display: none; width: 100%;height: 100%;}
 	.tab-menu-item.current {display: block;}
 
-	.tab-menu-item:first-child>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
-	.tab-menu-item:first-child>div>div:first-child{width: 60%; height: 100%;}
-	.tab-menu-item:first-child>div>div:first-child>div{width: 100%; height: 100%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 400px; font-size: 40px; font-weight: 600;}
-	.tab-menu-item:first-child>div>div:last-child{width: 40%; height: 100%;padding: 0 10px;}
-	.tab-menu-item:first-child>div>div:last-child>p{margin: 0;text-align: justify;font-size: 15px; line-height: 20px;}
-
-	.tab-menu-item:nth-child(2)>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
-	.tab-menu-item:nth-child(2)>div>div:first-child{width: 50%; height: 100%;display: flex; flex-direction: column; justify-content: space-between;}
-	.tab-menu-item:nth-child(2)>div>div:first-child>div{width: 100%; height: 49%; background-color: #252526; color: #23AAF2; text-align: center; line-height: 196px; font-size: 30px; font-weight: 600;}
-	.tab-menu-item:nth-child(2)>div>div:last-child{width: 50%; height: 100%;padding: 0 10px;}
-	.tab-menu-item:nth-child(2)>div>div:last-child>p{margin: 0;text-align: justify;font-size: 15px; line-height: 20px;}
-
-	.tab-menu-item:nth-child(3)>div{display: flex; flex-direction: row; justify-content: space-between;width: 100%;height: 100%;}
-	.tab-menu-item:nth-child(3)>div>div{width: 33%; height: 100%;display: flex; flex-direction: column; justify-content: space-between;}
-	.tab-menu-item:nth-child(3)>div>div>div{text-align: center; font-size: 30px; font-weight: 600;}
-	.tab-menu-item:nth-child(3)>div>div:first-child>div{width: 100%; height: 32.1%; background-color: #252526; color: #23AAF2; line-height: 128.39px;}
-	.tab-menu-item:nth-child(3)>div>div:nth-child(2)>div{width: 100%; height: 49%; background-color: #272627; color: #04B0F0; line-height: 196px;}
-	.tab-menu-item:nth-child(3)>div>div:last-child>div{width: 100%; height: 100%; background-color: #1E1E1E; color: #007ACC; line-height: 400px;}
+	
 	.like-img{width: 100%; height: 100%; text-align: center; font-size: 35px; font-weight: bold; line-height: 220px; color: #23AAF2; background-color: #252526;}
 	.MyClass{width: 1104px; height: 220px; overflow: hidden;}
 
-	/* RESET */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height: 1;}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after,
-q:before, q:after {content: '';content: none;}
-table {border-collapse: collapse;border-spacing: 0;}
-a{text-decoration: none; color: inherit;}
+	
+p{padding: 15px 5px; font-size: 20px;}
+@media screen and (max-width: 768px) {
+    #tab-layer-wrap{width: 100%;}
+    .tab-menu{flex-direction: column;}
+    .tab-menu .item{width: 100%;}
+}
 </style>
+
+
