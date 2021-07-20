@@ -1,215 +1,122 @@
-<style>
-    /* RESET */
-    
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height: 1;}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after,
-q:before, q:after {content: '';content: none;}
-table {border-collapse: collapse;border-spacing: 0;}
-a{text-decoration: none; color: inherit;}
-</style>
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-	
+	<link rel="shortcut icon" href="#">
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-
-	<title>MyLibrary</title>
+	<title>새콤달콤</title>
 </head>
-<style>
-    .title-notice{font-size: 1.4em; font-weight: 600; color: chocolate; padding: 15px;}
-    
-</style>
 <body>
-	asdf asdf
-	<section id="content-mid">
-		<div id="tab-layer-wrap">
-			<div class="tab-menu-wrap">
-				<div class="tab-menu">
-					<div class="item current">길드 컨텐츠 안내</div>
-					<div class="item un-current">index 2번</div>
-					<div class="item un-current">index 3번</div>
-					<div class="item un-current">index 4번</div>
-					<div class="item un-current">길드 사진 공지</div>
-                </div>
-			</div>
-			<div class="tab-cont-wrap">
-				<div class="tab-menu-content">
-					<div class="tab-menu-item current">
-                        <div>
-                            <h1 class="title-notice">길드컨텐츠에는 세가지가 있습니다.</h1>
-                        </div>
-						<div>
-							<div class="accordian-item">기여도 보스(기보)</div>
-							<div class="accordian-content">
-                                <div>
-                                    <p>길드원분들과 함께 보스를 잡으면 기여도가 오릅니다!</p>
-                                    <p>보통 노말 <strong>블러디퀸 , 피에르 , 반반 , 벨룸 , 힐라</strong>를 잡습니다.</p>
-                                    <p>5000 기여도가 들어오면 성공!</p>
-                                </div>
-                                    
-								<!-- <div class="accordian-inner-item"></div>
-								<div class="accordian-inner-content"></div> -->
-							</div>
-							<div class="accordian-item">플래그 레이스 (플래그)</div>
-							<div class="accordian-content">
-                                <p><strong><span style="color: RED;">매 시각 30분</span>에 길드 - 길드 컨텐츠 - 진행 현황</strong>에서플래그에 입장할 수 있습니다!</p>
-                                <p>맵은 총 3가지로 점프맵 컨텐츠입니다.</p>
-                                <p>얼마나 빨리 입장하느냐에 따라 지급되는 포인트가 달라지며, 해당 맵을 연습할 수도 있습니다.</p>
-                            </div>
-							<div class="accordian-item">샤레니안의 지하수로 (수로)</div>
-							<div class="accordian-content">
-                                <p><strong>플래그처럼 길드 - 길드 컨텐츠 - 진행 현황</strong>에서 지하수로에 입장할 수 있습니다!</p>
-                                <p>기존 이벤트의 펀치킹이라고 생각하시면 편합니다.</p>
-                                <p>매 단계마다 보스가 점점 강해지며 마지막엔 방어력이 300%라 방무가 꽤 필요합니다!</p>
-                                <p>
-                                    <div class="tempCls">
-                                        <div><img src="TEMP.png" alt=""></div>
-                                        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nostrum aperiam exercitationem illo quia ab reprehenderit fugit labore reiciendis sed optio nobis non, voluptatem consequuntur, ad cum at eum quasi.</p></div>
-                                    </div>
-                                    <style>
-                                        .tempCls{display: flex; flex-direction: row; justify-content: center; align-items: center;}
-                                    </style>
-                                </p>
-                            </div>
-						</div>
-					</div>
-                    <div class="tab-menu-item"></div>
-                    <div class="tab-menu-item"></div>
-                    <div class="tab-menu-item"></div>
-                    <div class="tab-menu-item">
-                        <div class="accordian-item">길드 사진 공지</div>
-                        <div class="accordian-content">
-                            <PRE>
-                            ■ 2021.07.24 길드사진 공지 ■
-
-                            약속 생길 분들이 있을까봐 미리 공지합니다!
-
-                            돌아오는 토요일 18:50에 길드
-                            사진을 촬영하려고 해요! [써드렸듯 7/24]
-
-                            촬영된 사진은 새콤달콤 길드 추억 간직 및
-                            길드 홍보용으로 사용될 예정이예요~
-
-                            작은 이벤트도 준비하고 있으니
-                            많은 참석 부탁드립니다!
-
-
-                            장소 보기 및 오시는 길 : <a href="https://blog.naver.com/jihye7303/222185518326">https://blog.naver.com/jihye7303/222185518326</a>
-
-                            <img src="KakaoTalk_20201225_215012431.jpg" alt="">
-                        </PRE>
-                        </div>
-                    </div>
+			
+				<div class="tabs">
+					<div class="subContent3_Tab_Active" rel="tab1">길드 컨텐츠 안내</div>
+					<div rel="tab2">제목</div>
+					<div rel="tab3">제에에목</div>
 				</div>
-			</div>
-		</div>
-	</section>
-</body>
+				<div id="tab1" class="subContent3_Tab">
+					<div>
+						<h3 class="title-notice">길드컨텐츠에는 세가지가 있습니다.</h3>
+					</div>
+					<div class="accordian-item">
+						<span>기여도 보스 (기보)</span>
+						<span class="expansionIcon"></span>
+					</div>
+					<div class="accordian-content">
+						<p>길드원분들과 함께 보스를 잡으면 기여도가 오릅니다!</p>
+						<p>보통 노말 <strong>블러디퀸 , 피에르 , 반반 , 벨룸 , 힐라</strong>를 잡습니다.</p>
+						<p>5000 기여도가 들어오면 성공!</p>
+					</div>
+					<div class="accordian-item">
+						<span>플래그 레이스 (플래그)</span>
+						<span class="expansionIcon"></span>
+					</div>
+					<div class="accordian-content">
+						<p><strong><span style="color: RED;">매 시각 30분</span>에 길드 - 길드 컨텐츠 - 진행 현황</strong>에서플래그에 입장할 수 있습니다!</p>
+						<p>맵은 총 3가지로 점프맵 컨텐츠입니다.</p>
+						<p>얼마나 빨리 입장하느냐에 따라 지급되는 포인트가 달라지며, 해당 맵을 연습할 수도 있습니다.</p>
+					</div>
+					<div class="accordian-item">
+						<span>샤레니안의 지하수로 (수로)</span>
+						<span class="expansionIcon"></span>
+					</div>
+					<div class="accordian-content">
+						<p><strong>플래그처럼 길드 - 길드 컨텐츠 - 진행 현황</strong>에서 지하수로에 입장할 수 있습니다!</p>
+						<p>기존 이벤트의 펀치킹이라고 생각하시면 편합니다.</p>
+						<p>매 단계마다 보스가 점점 강해지며 마지막엔 방어력이 300%라 방무가 꽤 필요합니다!</p>
+					</div>
+				</div>
+				<div id="tab2" class="subContent3_Tab">
+					<div class="accordian-item">
+						<span>TITLE</span>
+						<span class="expansionIcon"></span>
+					</div>
+					<div class="accordian-content">CONTENT</div>
+				</div>
+				<div id="tab3" class="subContent3_Tab">
+					<div class="accordian-item">
+						<span>TITLE</span>
+						<span class="expansionIcon"></span>
+					</div>
+					<div class="accordian-content">CONTENT</div>
+				</div>
 
-</html>
+		<script>
+			$('.accordian-item').on('click', function () {
+				function slideDown(target) {
+					slideUp();
+					$(target).addClass('on').next().slideDown();
+					$(target).children('.expansionIcon').addClass('iconEvent');
+				}
+				function slideUp() {
+					$('.accordian-item').removeClass('on').next().slideUp();
+					$('.accordian-item').children('.expansionIcon').removeClass('iconEvent');
+				}
+				$(this).hasClass('on') ? slideUp() : slideDown(this);
+			});
+			
+			$(function () {
+				$(".subContent3_Tab").hide();
+				$(".subContent3_Tab:first").show();
+				$("div.tabs div").click(function () {
+					$("div.tabs div").removeClass("subContent3_Tab_Active")
+					$(this).addClass("subContent3_Tab_Active")
+					$(".subContent3_Tab").hide()
+					var activeTab = $(this).attr("rel");
+					$("#" + activeTab).fadeIn()
+				});
+			});
+		</script>
+		<style>
+			/* 서브 1 콘텐츠 3 회칙*/
+div.tabs *{box-sizing: border-box;}
+div.tabs{width: 100%; display: flex; flex-direction: row; justify-content: space-between;}
+div.tabs div{width: 33.333%; text-align: center; padding: 1.5% 0; color: #007ACC; background-color: #FFF;box-shadow: 1px 0 0 0 #007ACC, 0 1px 0 0 #007ACC, 1px 1px 0 0 #007ACC, 1px 0 0 0 #007ACC inset, 0 1px 0 0 #007ACC inset;}
+.subContent3_Tab_Active{color: #FFF!important; background-color: #007ACC!important;}
+.subContent3_Tab{padding-top: 40px;}
+.accordian-item {background-color: #FFF;color: #444;cursor: pointer;padding: 1%;border-bottom: 1px solid #DADADA; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.accordian-item.on {background-color: #007ACC; color: #FFF;}
+.accordian-item:first-child{border-top: 1px solid #DADADA;}
+.accordian-content {background-color: #F4F4F4;display: none;padding: 2%;}
+.expansionIcon {width: 30px;height: 30px;display: flex;margin-top: -3px;align-items: center;justify-content: center;}
+.expansionIcon:before, .expansionIcon:after {content: '';position: absolute;border-radius: 50px;background-color: #c9d6df;transition: ease 0.3s all;}
+.expansionIcon:before {width: 2px;height: 20px;}
+.expansionIcon:after {width: 20px;height: 2px;}
+.expansionIcon.iconEvent.expansionIcon:before {transform: rotate(270deg);}
+.ruleWrap{padding: 15px 0;}
+.ruleWrap p{padding: 5px 0;}
+.ruleNumberTitle{font-size: 1.2em; font-weight: 500; padding-bottom: 15px;}
+.tableContent{width: 100%;padding: 15px 0;}
+.tableContent caption {padding: 10px; font-size: 1.2em;}
+.tableContent table {width: 100%; border-top: 1px solid #A1A1A1;}
+.tableContent table td,.tableContent table th {border-bottom: 1px solid #A1A1A1;text-align: center; padding: 10px;vertical-align: middle;}
 
-<script>
-	var Swiper = new Swiper('.MySwiper', {
-		slidesPerView: 1,
-		spaceBetween:10,
-		observer: true,
-		observeParents: true,
-		pagination: {
-			el:'.swiper-pagination',clickable:true
-		}
-	});
-</script>
-
-<script>
-	$(function() {         
-		$(".tab-menu>.item").click(function(){
-			var indexNum = $(this).index();
-			$(this).addClass("current").removeClass("un-current").siblings().removeClass("current").addClass("un-current");
-			$(".tab-menu-content>.tab-menu-item").eq(indexNum).show().siblings().hide();
-		})
-	});
-</script>
-
-<script>
-	$('.accordian-item').on('click', function() {
-		function slideDown(target) {
-			slideUp();
-			$(target).addClass('on').next().slideDown();
-		}
-		function slideUp() {
-			  $('.accordian-item').removeClass('on').next().slideUp();
-		}
-		$(this).hasClass('on') ? slideUp() : slideDown(this);
-	});
-
-
-
-	$('.accordian-inner-item').on('click', function() {
-		function slideDown(target) {
-			slideUp();
-			$(target).addClass('on').next().slideDown();
-		}
-		function slideUp() {
-			  $('.accordian-inner-item').removeClass('on').next().slideUp();
-		}
-		$(this).hasClass('on') ? slideUp() : slideDown(this);
-	});
-</script>
-
-<style>
-	
-* {margin: 0;padding: 0;}
-	.accordian-item {background-color: #333;margin-bottom: 5px; color: #FFF; padding: 14px;}
-	.accordian-content {background-color: #DDD;margin-bottom: 5px;display: none; padding: 14px;}
-	.accordian-inner-item {background-color: #888;margin-bottom: 5px; color: #FFF; padding: 14px;}
-	.accordian-inner-content {background-color: #DDD;margin-bottom: 5px;display: none; padding: 14px;}
-	@font-face{
-		font-family: 'yts';
-		src: url(Yt1b2_S8ns/YouTube-Sans-Light.otf);
-	}
-	*{font-family: 'yts';}
-	#content-mid{width: 100%; height: 500px; margin: 0 auto; background-color: #f6f6f6;}
-	#tab-layer-wrap{width: 1105px; height: 100%; margin: 0 auto;}
-	#tab-layer-wrap, #tab-layer-wrap * {box-sizing: border-box;}
-	#tab-layer-wrap .tab-menu>.item{padding:10px 0;cursor: pointer;}
-	.tab-cont-wrap{height: 400px; margin-top: 10px;}
-	.tab-menu-content{height: 100%;}
-
-	.tab-menu {margin: 0;padding: 0;overflow: hidden;display: flex;flex-direction: row;width: 100%; justify-content: space-between;}
-	.tab-menu .item{width: 17%; text-align: center; font-size: 17px; font-weight: bold;}
-	.tab-menu .item a {display: inline-block;color: #000;text-align: center;text-decoration: none;padding: 14px 16px;font-size: 17px;transition:0.3s;}
-	.tab-menu .item:hover{border-bottom: 7px solid #425094; color: #425094;}
-	.tab-menu .current{border-bottom: 7px solid #425094; color: #425094;}
-	.tab-menu .un-current{border-bottom: 7px solid #A5A5A5; color: #A5A5A5;}
-
-	.tab-menu-item {display: none; width: 100%;height: 100%;}
-	.tab-menu-item.current {display: block;}
-
-	
-	.like-img{width: 100%; height: 100%; text-align: center; font-size: 35px; font-weight: bold; line-height: 220px; color: #23AAF2; background-color: #252526;}
-	.MyClass{width: 1104px; height: 220px; overflow: hidden;}
-
-	
-p{padding: 15px 5px; font-size: 20px;}
-@media screen and (max-width: 768px) {
-    #tab-layer-wrap{width: 100%;}
-    .tab-menu{flex-direction: column;}
-    .tab-menu .item{width: 100%;}
+@media screen and (max-width: 600px) {
+	div.tabs{flex-direction: column;}
+	div.tabs div{width: 100%;}
 }
-</style>
-
-
+	</style>
+</body>
+</html>
